@@ -30,7 +30,7 @@ makeCacheMatrix <- function(m = matrix()) {
 ## cacheSolve returns the cached result instead of 
 ## re-computing the inverse.
 cacheSolve <- function(mcm, ...) {
-        ## Return a matrix that is the inverse of 'x'
+  ## Return a matrix that is the inverse of mcm$get()
   inv <- mcm$getinv()
   if(!is.null(inv)) {
     message("getting cached inverse")
